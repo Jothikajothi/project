@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+<style>
+    .heading{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <!-- form start -->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="heading">CROUD USER ADD</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-75 column-offset-10">
+                <form>
+                    <fieldset>
+                      <label for="fullname">Name</label>
+                      <input type="text" placeholder="Full Name" id="fullname">
+
+                      <div class="row">
+                          <div class="column column-50">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter Email" id="email">
+                          </div>
+                          <div class="column column-50">
+                            <label for=" phone">Phone</label>
+                            <input type="text" placeholder=" Phone" id="phone">
+                          </div>
+                      </div>
+
+                      <input class="button-primary"id="submit_user" type="submit">
+                    </fieldset>
+                  </form>
+            </div>
+        </div>
+    </div>
+<!-- form end -->
+<!-- table -->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="heading">CROUD USER LIST</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-75 column-offset-10">
+                <table>
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>PHONE</th>
+                        <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody id="user_table_body">
+                                          
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+<!-- table end -->
+
+    <script src="script.js"></script>
+</body>
+</html>
